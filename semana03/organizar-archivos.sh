@@ -21,9 +21,16 @@ touch trabajo/nota{1..10}.md
 echo -n "Archivos generados : "
 ls -1 trabajo | wc -l
 
-# Clasificacion : el shell expande *. ext antes de ejecutar mv
+# Clasificacion : el shell expande *.ext antes de ejecutar mv
 mv trabajo/*.sh organized/scripts/
 mv trabajo/*.txt organized/documentos/
-mv trabajo/*. md organized/documentos/
+mv trabajo/*.md organized/documentos/
 mv trabajo/*.jpg organized/imagenes/
 mv trabajo/*.log organized/registros/
+
+# Permisos por categoria
+chmod 755 organized/scripts/*.sh
+chmod 644 organized/documentos/* organized/imagenes/*
+chmod 444 organized/registros/*
+chmod 755 organized organized/scripts organized/documentos
+chmod 755 organized/imagenes organized/registros organized/otros
