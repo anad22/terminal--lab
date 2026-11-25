@@ -1,0 +1,89 @@
+=== /etc ===
+/etc guarda archivos de configuracion del sistema en texto plano .
+total 796
+drwxr-xr-x 2 root root       4096 Nov 22 19:53 PackageKit
+drwxr-xr-x 7 root root       4096 Jan  6  2025 X11
+-rw-r--r-- 1 root root       3444 Jul  5  2023 adduser.conf
+drwxr-xr-x 2 root root       4096 Nov 22 19:54 alternatives
+drwxr-xr-x 2 root root       4096 Jan  6  2025 apparmor
+drwxr-xr-x 9 root root       4096 Nov 22 20:06 apparmor.d
+drwxr-xr-x 3 root root       4096 Nov 22 19:53 apport
+drwxr-xr-x 8 root root       4096 Jan  6  2025 apt
+-rw-r--r-- 1 root root       2319 Mar 31  2024 bash.bashrc
+-rw-r--r-- 1 root root         45 Jan 24  2020 bash_completion
+drwxr-xr-x 2 root root       4096 Nov 22 19:54 bash_completion.d
+-rw-r--r-- 1 root root        367 Aug  2  2022 bindresvport.blacklist
+drwxr-xr-x 2 root root       4096 Apr 19  2024 binfmt.d
+drwxr-xr-x 2 root root       4096 Jan  6  2025 byobu
+drwxr-xr-x 3 root root       4096 Jan  6  2025 ca-certificates
+-rw-r--r-- 1 root root       6984 Nov 22 20:00 ca-certificates.conf
+-rw-r--r-- 1 root root       6288 Jan  6  2025 ca-certificates.conf.dpkg-old
+drwxr-xr-x 5 root root       4096 Nov 22 20:03 cloud
+drwxr-xr-x 2 root root       4096 Jan  6  2025 console-setup
+  -------------------------------------------------- 
+
+=== /var ===
+/var guarda datos que cambian : registros , colas y caches .
+total 44K
+drwxr-xr-x  2 root root   4.0K Nov 25 11:06 backups
+drwxr-xr-x 13 root root   4.0K Aug 26  2025 cache
+drwxrwsrwt  2 root root   4.0K Jan  6  2025 crash
+drwxr-xr-x 32 root root   4.0K Jan  6  2025 lib
+drwxrwsr-x  2 root staff  4.0K Apr 22  2024 local
+lrwxrwxrwx  1 root root      9 Jan  6  2025 lock -> /run/lock
+drwxrwxr-x  8 root syslog 4.0K Nov 24 20:08 log
+drwxrwsr-x  2 root mail   4.0K Jan  6  2025 mail
+drwxr-xr-x  2 root root   4.0K Jan  6  2025 opt
+lrwxrwxrwx  1 root root      4 Jan  6  2025 run -> /run
+drwxr-xr-x  2 root root   4.0K Oct 11  2024 snap
+drwxr-xr-x  4 root root   4.0K Jan  6  2025 spool
+drwxrwxrwt  7 root root   4.0K Nov 25 11:09 tmp
+  -------------------------------------------------- 
+
+=== /home ===
+/home contiene un subdirectorio por usuario con sus archivos personales .
+total 4
+drwxr-x--- 8 anad anad 4096 Nov 19 18:55 anad
+  -------------------------------------------------- 
+
+=== /bin ===
+/bin contiene programas esenciales disponibles para todo usuario .
+lrwxrwxrwx 1 root root 7 Apr 22  2024 /bin -> usr/bin
+  -------------------------------------------------- 
+
+=== /tmp ===
+/tmp contiene archivos temporales que se vacian al reiniciar .
+total 24K
+drwx------ 2 root root 4.0K Nov 24 20:08 snap-private-tmp
+drwx------ 3 root root 4.0K Nov 24 20:16 systemd-private-445dfba6b75d4e2b8c731d10404b8f14-polkit.service-q87HDm
+drwx------ 3 root root 4.0K Nov 24 20:08 systemd-private-445dfba6b75d4e2b8c731d10404b8f14-systemd-logind.service-RKAYk6
+drwx------ 3 root root 4.0K Nov 24 20:08 systemd-private-445dfba6b75d4e2b8c731d10404b8f14-systemd-resolved.service-uk3oWq
+drwx------ 3 root root 4.0K Nov 24 20:08 systemd-private-445dfba6b75d4e2b8c731d10404b8f14-systemd-timesyncd.service-8pJxYj
+drwx------ 3 root root 4.0K Nov 25 11:09 systemd-private-445dfba6b75d4e2b8c731d10404b8f14-wsl-pro.service-a6EA5R
+  -------------------------------------------------- 
+
+=== /proc ===
+/proc es un sistema virtual : el kernel genera su contenido al leerlo .
+total 0
+dr-xr-xr-x  9 root             root                           0 Nov 24 20:08 1
+dr-xr-xr-x  9 systemd-resolve  systemd-resolve                0 Nov 24 20:08 104
+dr-xr-xr-x  9 systemd-timesync systemd-timesync               0 Nov 24 20:08 105
+dr-xr-xr-x  9 root             root                           0 Nov 24 20:08 142
+dr-xr-xr-x  9 messagebus       messagebus                     0 Nov 24 20:08 143
+dr-xr-xr-x  9 root             root                           0 Nov 24 20:08 164
+dr-xr-xr-x  9 root             root                           0 Nov 25 11:09 1772
+dr-xr-xr-x  9 syslog           syslog                         0 Nov 24 20:08 188
+dr-xr-xr-x  9 anad             anad                           0 Nov 25 11:17 1883
+dr-xr-xr-x  9 anad             anad                           0 Nov 25 11:17 1893
+dr-xr-xr-x  9 anad             anad                           0 Nov 25 11:17 1894
+dr-xr-xr-x  9 root             root                           0 Nov 24 20:08 2
+dr-xr-xr-x  9 root             root                           0 Nov 24 20:08 203
+dr-xr-xr-x  9 root             root                           0 Nov 24 20:08 211
+dr-xr-xr-x  9 root             root                           0 Nov 24 20:08 227
+dr-xr-xr-x  9 root             root                           0 Nov 24 20:08 355
+dr-xr-xr-x  9 root             root                           0 Nov 24 20:08 356
+dr-xr-xr-x  9 anad             anad                           0 Nov 24 20:08 357
+dr-xr-xr-x  9 root             anad                           0 Nov 24 20:08 358
+  -------------------------------------------------- 
+
+ Exploracion completada.
