@@ -27,4 +27,14 @@ echo "=== Hora pico ( hora con mas peticiones ) === "
 cut -d'[' -f2 "$LOG" | cut -d':' -f2 | sort | uniq -c | sort -nr | head -n 1
 
 echo ""
-echo " Analisis completado."
+echo "=== Top 5 recursos mas solicitados ==="
+# El recurso solicitado es el campo 7
+awk '{ print $7}' "$LOG" | sort | uniq -c | sort -nr | head -n 5
+
+echo ""
+echo" Analisis completo."
+
+
+
+
+
