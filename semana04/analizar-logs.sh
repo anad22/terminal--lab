@@ -1,7 +1,7 @@
-# !/bin/bash
-# analizar - logs .sh - Procesa acceso . log y genera un reporte de 4 secciones
+# ! /bin/bash
+# analizar-logs.sh - Procesa acceso.log y genera un reporte de 4 secciones
 # Autor : Dana Pacheco Cartagena
-# Fecha : 2026 -11 -26
+# Fecha : 2026 -11 -28
 # Uso : ./analizar-logs.sh
 # Descripcion : lee acceso.log ( en esta misma carpeta ) y resume IPs , estados ,
 # errores 500 y hora pico usando tuberias .
